@@ -6,6 +6,7 @@ import com.aplavina.figures.Figure;
 import com.aplavina.figures.Square;
 import com.aplavina.figures.Triangle;
 import com.aplavina.geomutils.FiguresAnalyticsManager;
+import com.aplavina.threedemensional.Cube;
 import com.aplavina.threedemensional.Sphere;
 import com.aplavina.threedemensional.ThreeDemensionalFigure;
 
@@ -28,5 +29,8 @@ public class Main {
 
         ThreeDemensionalFigure threeDemensionalFigure = new Sphere(4);
         System.out.println("Sphere volume: " + threeDemensionalFigure.volume());
+
+        ThreeDemensionalFigure cube = new Cube(10, 10, 10);
+        System.out.println("Cube volume: " + cube.volume());
     }
 }
