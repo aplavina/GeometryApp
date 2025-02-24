@@ -1,7 +1,12 @@
 package com.aplavina;
 
+import com.aplavina.geomtry.Figure;
+import com.aplavina.geomtry.Triangle;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Figure figure = new Triangle(2, 3, 4);
+        System.out.println("area: " + figure.area());
+        System.out.println("perimeter: " + figure.perimeter());
     }
 }
