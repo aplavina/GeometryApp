@@ -1,7 +1,13 @@
 package com.aplavina;
 
-import com.aplavina.geomtry.Figure;
-import com.aplavina.geomtry.Triangle;
+
+import com.aplavina.figures.Circle;
+import com.aplavina.figures.Figure;
+import com.aplavina.figures.Square;
+import com.aplavina.figures.Triangle;
+import com.aplavina.geomutils.FiguresAnalyticsManager;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,5 +20,8 @@ public class Main {
         } catch (IllegalArgumentException ex) {
             System.out.println("Caught IllegalArgumentException");
         }
+
+        List<Figure> figures = List.of(new Circle(10), new Square(4));
+        FiguresAnalyticsManager.printAnalytics(figures);
     }
 }
